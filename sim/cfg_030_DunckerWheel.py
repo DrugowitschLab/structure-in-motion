@@ -56,7 +56,7 @@ cfg = {
     # GLOABAL PARAMETERS
     "glo" : dict(
         DRYRUN = False,           # If true, nothing will be saved to disk.
-        PLOTAFTER = True,        # If true, some basic results will be plotted after the simulation
+        PLOTAFTER = False,        # If true, some basic results will be plotted after the simulation
         loglevel = "INFO",      # level of logging ["DEBUG", "INFO", "WARNING", "ERROR"]
         dsl = dsl,               # dataset label
         outdir = "./data/%s" % dsl,   # output directory

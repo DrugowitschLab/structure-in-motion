@@ -16,7 +16,7 @@ Any modern desktop computer should be sufficient to run the code.
 
 ## Installation
 
-We assume a Linux installation based on Ubuntu 20.04. On Mac, you should be able to homebrew with sip and pyqt. First, clone this repository. In the cloned repository, use a virtual environment with Python 3.8:
+We assume a Linux installation based on Ubuntu 20.04. On Mac, you should be able to homebrew with sip and pyqt. First, clone this repository. In the cloned repository, use a virtual environment with Python 3.8 (execute the following _line by line_):
 
 ```
 python3 -m pip install --user --upgrade pip   # Install pip (if not yet installed)
@@ -63,7 +63,7 @@ To get acquainted with the software, it is helpful to go through the software pi
    python run.py cfg_030_DunckerWheel.py
    ```
    Each simulation will create a Data Set Label (`DSL`) using the current system time.
-   The `DSL` is printed on the terminal near the beginning and end of the simulation,
+   The `DSL` is printed on the terminal near the beginning of the simulation,
    and the results are stored in `./data/<DSL>/`.
    
 3. Plot the results:  
