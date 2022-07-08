@@ -50,10 +50,9 @@ To run the experiment, simply type `python run.py cfg_NAME.py`.
 
 ### Demo: Reproducing Figure 2
 To get acquainted with the software, it is helpful to go through the software pipeline for creating Figure 2.
-1. Activate the environment, create a directory for the data (if not yet present), and cd to the simulation descriptions:
+1. Activate the environment and cd to the simulation descriptions:
    ```
    source .venv/bin/activate
-   mkdir data
    cd sim
    ```
 
