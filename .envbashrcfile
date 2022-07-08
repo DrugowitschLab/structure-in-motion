@@ -1,0 +1,4 @@
+. ~/.bashrc
+. ./.venv/bin/activate
+
+# Use this file for desktop launchers: Invoke e.g. via gnome-terminal --working-directory=/path/to/this/dir --tab -e "bash --rcfile .envbashrcfile" --tab -e "bash --rcfile .envbashrcfile" --tab -e "bash --rcfile .envbashrcfile"

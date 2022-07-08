@@ -1,0 +1,8 @@
+file 'intro_0.mp4'
+file 'video_S5_Structure-from-motion_height_4.0_one_cylinder.mp4'
+file 'intro_1.mp4'
+file 'video_S5_Structure-from-motion_nested_slow_outer_slow_inner.mp4'
+file 'intro_2.mp4'
+file 'video_S5_Structure-from-motion_nested_slow_outer_fast_inner.mp4'
+file 'intro_3.mp4'
+file 'video_S5_Structure-from-motion_nested_fast_outer_slow_inner.mp4'
