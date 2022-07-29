@@ -21,7 +21,7 @@ import strinf as si
 
 # # #  PARAMETERS  # # #
 PLOT = True                   # Plot some results right away? Make sure that "/ana/fig/" exists
-SAVE = False                   # Save results to file?
+SAVE = True                   # Save results to file?
 
 DSL = "2021-08-19-12-14-27-196363_100_repulsion_by_angle_Braddick"  # Data to analyze
 fil = "adiab"                                      # used filter

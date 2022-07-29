@@ -26,7 +26,7 @@ pl.rc('figure', dpi=2*pl.rcParams['figure.dpi'])
 
 # # #  PARAMETERS  # # #
 PLOT = True                   # Plot some results right away? Make sure that "/ana/fig/" exists
-SAVE = False                   # Save results to file?
+SAVE = True                   # Save results to file?
 
 DSL = {"multy_0_surround_bi" : "2022-05-12-16-03-09-435421_107_direction_repulsion_Takemura_inner_y_0_outer_bi",
        "multy_0_surround_down" : "2022-05-12-16-03-25-555141_107_direction_repulsion_Takemura_inner_y_0_outer_down",

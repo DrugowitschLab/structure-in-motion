@@ -14,7 +14,7 @@ import pylab as pl
 from collections import defaultdict
 
 # # #  PARAMETERS  # # #
-PLOT = True                   # Plot some results right away? Make sure that "/ana/fig/" exists
+PLOT = False                   # Plot some results right away? Make sure that "/ana/fig/" exists
 CROSSVALIDATED = True         # Use leave-one-out cross-validation (slower) or direct max. likelihood (faster)
 SAVE = True                   # Save results to file?
 
@@ -393,7 +393,6 @@ print(f" > Loaded data of {len(data['X'].keys()):d} filters from {data['Rs'].sha
 
 # # # Central for-loop over the filters  # # #
 fitchoice = defaultdict(list)
-# fil = 'adiab_0.020'
 for fil in Fil:
     print(f"\n > Now processing filter '{fil}'.")
     # 2) Train the logistic regression classifier on the ground truth
