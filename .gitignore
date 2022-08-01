@@ -1,3 +1,11 @@
+# Specific to structure-in-motion
+**/data/
+!/data/data_yang2021_experiment_1/yang_logL_exp1_4paramModel.txt
+!/data/data_Braddick_2002_Fig3C.txt
+/plt/fig/
+/ana/fig/
+
+# .gitignore default for Python
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
