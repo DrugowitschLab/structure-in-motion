@@ -453,7 +453,7 @@ class FilterStrinfVeloBase(object):
         self.lam = lam
         self.Lam = np.diag(np.tile(self.lam, self.D))
         if hasattr(self, "lam2"):   # if present, update the square-cache
-            self.lam2 = self.lam**2
+            self.lam2 = lam**2
 
     def infer_strengths(self, *args, **kwargs):
         # 1) Call the inf_method --> lam_new

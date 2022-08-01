@@ -6,7 +6,7 @@ import strinf as si
 
 # # #  PARAMETERS  # # # 
 ZOOM = 1.5
-SAVE = False
+SAVE = True
 SHOW = True
 PANEL = ("C", "E", "F")   # The sketches in A, B, D are always plotted.
 

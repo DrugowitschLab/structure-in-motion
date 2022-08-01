@@ -21,7 +21,7 @@ Remark (2022-07-07): This is a pre-release of the software during the review pro
 
 The software has been developed and tested for Python 3.8 on Linux Mint 20.3. 
 Detailed requirements on software packages are provided in the file `requirements.txt`.
-Any modern desktop computer should be sufficient to run the code.
+Any modern desktop computer with 16GB+ of memory should be sufficient to run the code within one or two work days.
 
 ## Installation
 
@@ -115,6 +115,11 @@ Neural network simulations (`class RateNetworkMTInputStrinfAdiabaticDiagonalSigm
 
 The experiments in Figures 3 to 7 are more involved. Here we outline the steps for reproducing them.
 
+Before you start, create a sub-directory `/ana/fig/` for technical figures which are generated during analysis.
+
+
+**Remark:** When following the instructions, always `cd` into the script's directory, i.e., "Run `/ana/Yang_regress_and_choice.py`" means `cd ana` and then `python Yang_regress_and_choice.py`.
+
 
 ### Figure 3 
 
@@ -125,7 +130,7 @@ Download the experiment trials of (Yang et al., 2021) from their [GitHub reposit
 Run the simulation on the trials using the config file `cfg_040_YangETAL_2021.py`. The simulation must be run for each participant separately, with the participant ID (`pid=1..12`) entered in `line 51` of the config file. Store the dataset labels in the dict `DSL` in `/ana/YangETAL_dsl.py` for the subsequent analysis.  
 
 #### Fit the choice model on the inferred motion strengths 
-Run `/ana/Yang_regress_and_choice.py` which fits the choice model and stores the results in `/ana/yang_predicted_choices_by_motion_structure_inference_algorithm_CV.pkl`. 
+Run `/ana/Yang_regress_and_choice.py` which fits the choice model and stores the results in `/ana/data_yang2021_experiment_1/yang_predicted_choices_by_motion_structure_inference_algorithm_CV.pkl`.
 
 #### Plot the figure
 Run `/plt/plot_figure_3.py` to plot Figure 3. The script calculates the confusion matrices and choice log-likelihoods based on the file saved in the previous step. For the comparison in panel 3F, the log-likelihoods under the model of (Yang et al., 2021) are loaded from `./data/data_yang2021_experiment_1/yang_logL_exp1_4paramModel.txt`.
@@ -179,7 +184,7 @@ For this single cylinder condition, use `lines 28 to 30` of the config file (and
 
 #### Analyze the simulation data for perceptual switching times
 
-In the analysis script `/ana/SFM_switching_times.py`, enter the `DSL` of the long simulation in `line 11`. Running the script will extract and store the switching times in `/data/analysis_SFM_<DSL>.pkl`.
+In the analysis script `/ana/SFM_switching_times.py`, enter the `DSL` of the long simulation in `line 11`. Running the script will extract and store the switching times in `/data/analysis_SFM_<DSL>.pkl`. Furthermore, the script will detect the threshold value for perceptual switches (printing, e.g., `> Threshold set to ±1.18`). Note down this value.
 
 #### Run the model for the nested cylinder conditions
 
@@ -192,9 +197,9 @@ The three simulations only differ in the rotational speeds of the outer and inne
 
 #### Plot the figure
 
-In `/plt/plot_figure_6.py`, enter the `DSL` of the short single-cylinder simulation and of the three nested cylinder simulations in `line 15` and `lines 18 - 20`, respectively. Enter the file name of the switching times in `line 16` and run the script to plot Figure 6.
+In `/plt/plot_figure_6.py`, enter the `DSL` of the short single-cylinder simulation and of the three nested cylinder simulations in `line 15` and `lines 18 - 20`, respectively. Enter the file name of the switching times in `line 16` and the switching threshold in `line 17`. Run the script to plot Figure 6.
 
 
 ### Figure 7
 
-Run the two simulations `cfg_200_network_polar_plus_global.py` (for panels 7g-j) and `cfg_220_network_ramp_lambda.py` (for panel 7m) and enter the obtained `DSL` in `line 25` and `line 53` of `/plt/plot_figure_7.py`, respectively. Run the script to plot Figure 7.
+Run two simulations using the config files `cfg_200_network_polar_plus_global.py` (for panels 7g-j) and `cfg_220_network_ramp_lambda.py` (for panel 7m) and enter the obtained `DSL` in `line 25` and `line 53` of `/plt/plot_figure_7.py`, respectively. Run the script to plot Figure 7.

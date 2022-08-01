@@ -4,6 +4,7 @@
 !/data/data_Braddick_2002_Fig3C.txt
 /plt/fig/
 /ana/fig/
+/sim/fig/
 
 # .gitignore default for Python
 # Byte-compiled / optimized / DLL files

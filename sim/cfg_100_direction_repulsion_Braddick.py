@@ -22,7 +22,7 @@ human_readable_dsl = "100_repulsion_by_angle_Braddick"
 D = 2                  # number of spatial dimensions
 lam_tot = 2.0          # equivalent speed of stim
 nAngle = 33           # number of tested opening angles (spaced equally from 0..180 degrees)
-reps = 1              # trial repetitions (for each angle)
+reps = 20              # trial repetitions (for each angle)
 
 
 sig_obs = sig_obs * np.ones((2,3))
