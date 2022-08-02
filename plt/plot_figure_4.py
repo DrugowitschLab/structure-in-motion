@@ -330,7 +330,7 @@ def plot_takemura_inner_angles(inner_angles, bins, ax):
         color = si.colors.get_color(si.colors.CMAP['velo'], k, K)
         kwargs = dict(bottom=0., width=np.diff(bins), zorder=5)
         ax.bar(theta, count, color=color, **kwargs)
-    ax.set_xticks(np.linspace(0, 180, 7)/180*pi)
+    ax.set_xticks(np.linspace(0, 180, 7)/180*np.pi)
     ax.xaxis.set_tick_params(pad=-2.)
     ax.xaxis.set_tick_params(grid_linewidth=0.5)
     ax.set_ylim(0, takemura["count_max"])

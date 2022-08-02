@@ -21,7 +21,7 @@ human_readable_dsl = "107_direction_repulsion_Takemura"
 
 D = 2                  # number of spatial dimensions
 lam_tot = 2.0          # equivalent speed of stim
-reps = 1 # 200              # trial repetitions
+reps = 200             # trial repetitions
 # In Experiment 1, the inner dots have no vertical component.
 # In Experiment 2, all inner dots have the same x-speed, and a multiplier of this value on their y-speed.
 multy = 1       # in {0,1,2,3,4}, or choose 0 for experiment 1; choose 1 for experiment 2, 90 degree condition

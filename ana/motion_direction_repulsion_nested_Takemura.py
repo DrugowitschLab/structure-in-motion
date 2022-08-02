@@ -96,7 +96,7 @@ def plot_inner_angles(inner_angles, bins=np.linspace(-22.5,202.5,46)/180*np.pi, 
         print(np.sum(count), count)
         kwargs = dict(bottom=0., width=np.diff(bins), zorder=5)
         ax.bar(theta, count, **kwargs)
-    ax.set_xticks(np.linspace(0, 180, 7)/180*pi)
+    ax.set_xticks(np.linspace(0, 180, 7)/180*np.pi)
     ax.set_ylim(0, 55)
     ax.set_yticks([50])
     if key:
