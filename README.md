@@ -1,8 +1,10 @@
 # Code for online motion structure inference
 
 Code for the research paper:
-_Johannes Bill, Samuel J Gershman, Jan Drugowitsch: Visual motion perception as online hierarchical inference (2022)_. Preprint: https://www.biorxiv.org/content/10.1101/2021.10.21.465346
+_Johannes Bill, Samuel J Gershman, Jan Drugowitsch: Visual motion perception as online hierarchical inference (2022)_. Preprint: https://www.biorxiv.org/content/10.1101/2021.10.21.465346 . 
 This repository contains the Python code for simulations, analyses and plotting.
+
+This version has a DOI: [![DOI](https://zenodo.org/badge/511930898.svg)](https://zenodo.org/badge/latestdoi/511930898)
 
 ## Table of contents
 - [System requirements](#system-requirements)
